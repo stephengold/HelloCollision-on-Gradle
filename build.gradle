@@ -1,5 +1,7 @@
 apply plugin: 'java'
 
+// select one source-code option
+//sourceCompatibility = '1.6'
 //sourceCompatibility = '1.7'
 sourceCompatibility = '1.8'
 
@@ -11,6 +13,7 @@ gradle.projectsEvaluated {
     }
     tasks.withType(JavaExec) {
         classpath sourceSets.main.runtimeClasspath
+        //debug true
         enableAssertions true
     }
 }
@@ -32,12 +35,12 @@ repositories {
     maven { url 'https://jcenter.bintray.com' }
     maven { url 'https://dl.bintray.com/stephengold/org.jmonkeyengine' }
     // Read more about repositories here:
-    //   http://www.gradle.org/docs/current/userguide/dependency_management.html#sec:repositories
+    //   https://docs.gradle.org/current/userguide/dependency_management.html#sec:repositories
 }
 
 dependencies {
     // You can read more about how to add dependencies here:
-    //   http://www.gradle.org/docs/current/userguide/dependency_management.html#sec:how_to_declare_your_dependencies
+    //   https://docs.gradle.org/current/userguide/dependency_management.html#sec:how_to_declare_your_dependencies
 
     // from jcenter repositories:
     compile "org.jmonkeyengine:jme3-core:${jmonkeyengineVersion}"
