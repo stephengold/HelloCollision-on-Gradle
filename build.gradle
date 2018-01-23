@@ -12,10 +12,13 @@ gradle.projectsEvaluated {
         classpath sourceSets.main.runtimeClasspath
         //debug true
         enableAssertions true
+        jvmArgs '-XX:+UseConcMarkSweepGC'
     }
 }
 
-ext.jmonkeyengineVersion = '3.2.0-stable'
+// select a version of the Engine
+//ext.jmonkeyengineVersion = '3.2.0-stable' // from jcenter
+ext.jmonkeyengineVersion = '3.2.1-stable' // from jcenter
 
 // NetBeans will automatically add "run" and "debug" tasks relying on the
 // "mainClass" property. You may however define the property prior executing
