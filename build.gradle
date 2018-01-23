@@ -33,7 +33,6 @@ if (!hasProperty('mainClass')) {
 
 repositories {
     maven { url 'https://jcenter.bintray.com' }
-    maven { url 'https://dl.bintray.com/stephengold/org.jmonkeyengine' }
     // Read more about repositories here:
     //   https://docs.gradle.org/current/userguide/dependency_management.html#sec:repositories
 }
