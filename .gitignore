@@ -1,5 +1,6 @@
-/.gradle/2.13/
+/.gradle/
 /.nb-gradle/
 /build/
 /private/
 /*.dll
+/*.so
