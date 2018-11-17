@@ -46,11 +46,9 @@ dependencies {
 
     // from jcenter (or mavenLocal) repositories:
     compile "org.jmonkeyengine:jme3-core:$jmonkeyengineVersion"
-    //runtime "org.jmonkeyengine:jme3-blender:$jmonkeyengineVersion"
     compile "org.jmonkeyengine:jme3-bullet:$jmonkeyengineVersion"
     runtime "org.jmonkeyengine:jme3-bullet-native:$jmonkeyengineVersion"
     runtime "org.jmonkeyengine:jme3-desktop:$jmonkeyengineVersion"
-    //runtime "org.jmonkeyengine:jme3-jogg:$jmonkeyengineVersion"
     runtime "org.jmonkeyengine:jme3-plugins:$jmonkeyengineVersion"
 
     // select one version of LWJGL (from jcenter or mavenLocal)
