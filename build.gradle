@@ -1,4 +1,6 @@
-apply plugin: 'java'
+plugins {
+    id 'java'
+}
 
 sourceCompatibility = '1.6'
 
@@ -55,15 +57,15 @@ dependencies {
     //   https://docs.gradle.org/current/userguide/dependency_management.html#sec:how_to_declare_your_dependencies
 
     // from jcenter (or mavenLocal) repositories:
-    compile "org.jmonkeyengine:jme3-core:$jmonkeyengineVersion"
-    compile "org.jmonkeyengine:jme3-bullet:$jmonkeyengineVersion"
-    runtime "org.jmonkeyengine:jme3-bullet-native:$jmonkeyengineVersion"
-    runtime "org.jmonkeyengine:jme3-desktop:$jmonkeyengineVersion"
-    runtime "org.jmonkeyengine:jme3-plugins:$jmonkeyengineVersion"
+    implementation "org.jmonkeyengine:jme3-core:$jmonkeyengineVersion"
+    implementation "org.jmonkeyengine:jme3-bullet:$jmonkeyengineVersion"
+    runtimeOnly "org.jmonkeyengine:jme3-bullet-native:$jmonkeyengineVersion"
+    runtimeOnly "org.jmonkeyengine:jme3-desktop:$jmonkeyengineVersion"
+    runtimeOnly "org.jmonkeyengine:jme3-plugins:$jmonkeyengineVersion"
 
     // select one version of LWJGL (from jcenter or mavenLocal)
-    runtime "org.jmonkeyengine:jme3-lwjgl:$jmonkeyengineVersion"
-    //runtime "org.jmonkeyengine:jme3-lwjgl3:$jmonkeyengineVersion"
+    runtimeOnly "org.jmonkeyengine:jme3-lwjgl:$jmonkeyengineVersion"
+    //runtimeOnly "org.jmonkeyengine:jme3-lwjgl3:$jmonkeyengineVersion"
 }
 
 // cleanup tasks
